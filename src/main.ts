@@ -1,7 +1,6 @@
 import * as THREE from 'three'
 import './style.css'
 import { GLTF, GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
-import backgroundTexture from '/maxwell/bg.jpg'
 
 
 const scene = new THREE.Scene();
@@ -47,7 +46,7 @@ scene.add(light)
 /* const controls = new OrbitControls(camera, renderer.domElement)
 controls.enableDamping = true */
 
-const backGround = new THREE.TextureLoader().load(backgroundTexture);
+const backGround = new THREE.TextureLoader().load('/maxwell/bg.jpg');
 scene.background = backGround;
 
 
